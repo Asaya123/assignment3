@@ -69,7 +69,7 @@
             font-weight: bold;
         }
 
-        form input, form select, form textarea, form button {
+        form input, form select, form button {
             padding: 0.5rem;
             border: 1px solid #ccc;
             border-radius: 4px;
@@ -86,16 +86,24 @@
             background-color: #13e7c0;
         }
 
-        .gallery img {
-            width: 100%;
-            border-radius: 8px;
-        }
-
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1rem;
         }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
     </style>
 </head>
 <body>
@@ -113,55 +121,67 @@
 
     <main class="container">
     </main>
-</body>
 
-<section>
-    <h2>Heritage Sites in Rome</h2>
-    <div class="heritage-list">
-        <a href="colosseum.html" target="_blank"><img src="colosseum.jfif" alt="Colosseum"></a>
-        <a href="pantheon.html" target="_blank"><img src="pantheon.jfif" alt="Pantheon"></a>
-        <a href="vatican.html" target="_blank"><img src="vatican.jfif" alt="Vatican City"></a>
-        <a href="roman_forum.html" target="_blank"><img src="roman_forum.jfif" alt="Roman Forum"></a>
-        <a href="trevi_fountain.html" target="_blank"><img src="trevi_fountain.jfif" alt="Trevi Fountain"></a>
-    </div>
-</section>
+    <section>
+        <h2>Heritage Sites in Rome</h2>
+        <div class="heritage-list">
+            <a href="colosseum.html" target="_blank"><img src="colosseum.jfif" alt="Colosseum"></a>
+            <a href="pantheon.html" target="_blank"><img src="pantheon.jfif" alt="Pantheon"></a>
+            <a href="vatican.html" target="_blank"><img src="vatican.jfif" alt="Vatican City"></a>
+            <a href="roman_forum.html" target="_blank"><img src="roman_forum.jfif" alt="Roman Forum"></a>
+            <a href="trevi_fountain.html" target="_blank"><img src="trevi_fountain.jfif" alt="Trevi Fountain"></a>
+        </div>
+    </section>
 
-<section>
-    <h2>Colosseum</h2>
-    <p>The Colosseum is an iconic symbol of Ancient Rome. Built in 80 AD, it hosted gladiator games and public spectacles.</p>
-</section>
+    <section>
+        <h2>Colosseum</h2>
+        <p>The Colosseum is an iconic symbol of Ancient Rome. Built in 80 AD, it hosted gladiator games and public spectacles.</p>
+    </section>
 
-<section>
-    <h2>Hotel Booking</h2>
-    <form>
-        <label for="name">Full Name</label>
-         <input type="text" id="name" name="name" required>
+    <section>
+        <h2>Hotel Booking</h2>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="duration" >Duration of Stay </label>
-        <input type="number"id="duration" name="duration" required>
-        <label for="room">Room Type:</label>
-        <select id="room" name="room">
-             <option value="single" >Single Room</option>
-            <option value="double">Double Room</option>
-               <option value="suite">Suite</option>
-        </select>
+            <label for="duration" >Duration of Stay </label>
+            <input type="number" id="duration" name="duration" required>
 
-        <label for="notes">Special Requests:</label>
+            <label for="room">Room Type:</label>
+            <select id="room" name="room">
+                <option value="single" >Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="suite">Suite</option>
+            </select>
 
-        <textarea id="notes" name="notes"></textarea>
+            <label for="notes">Special Requests:</label>
+            <input type="text" id="notes" name="notes">
 
-        <button type="submit">Book Now</button>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
 
-    </form>
-   </section>
-<section>
-    <h2>Gallery</h2>
+    <section>
+        <h2>Gallery</h2>
         <div class="gallery">
-        <img src="gallery1.jfif"  alt="Heritage Site 1">
-        <img src="gallery2.jfif"alt="Heritage Site 2">
-        <img src="gallery3.jfif" alt="Heritage Site 3">
-        <img src="gallery4.jfif"  alt="Heritage Site 4">
-    </div>
-</section>
+            <img src="gallery1.jfif" alt="Heritage Site 1">
+            <img src="gallery2.jfif" alt="Heritage Site 2">
+            <img src="gallery3.jfif" alt="Heritage Site 3">
+            <img src="gallery4.jfif" alt="Heritage Site 4">
+            <img src="1.jpg" alt="Heritage Site 5">
+            <img src="2.jpg" alt="Heritage Site 6">
+            <img src="3.jpg" alt="Heritage Site 7">
+            <img src="4.jpg" alt="Heritage Site 8">
+            <img src="5.jpg" alt="Heritage Site 9">
+            <img src="6.jpg" alt="Heritage Site 10">
+            <img src="7.jpg" alt="Heritage Site 11">
+            <img src="8.jpg" alt="Heritage Site 12">
+            <img src="9.jpg" alt="Heritage Site 13">
+            <img src="10.jpg" alt="Heritage Site 14">
+            <img src="11.jpg" alt="Heritage Site 15">
+            <img src="12.jpg" alt="Heritage Site 16">
+        </div>
+    </section>
 
+</body>
 </html>
