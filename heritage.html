@@ -88,14 +88,14 @@
 
         .gallery {
             display: -ms-flexbox;
-            diplay: flexbox;
-            -ms-flex wrap:wrap;
+            diplay: flex;
+            -ms-flex-wrap:wrap;
             flex-wrap:wrap;
             padding : 0 4px
             
         }
         .column{
-            -ms-flexbox:25%;
+            -ms-flex:25%;
             max-width:25%;
             flex:25%;
             padding: 0 4px;
@@ -105,8 +105,8 @@
             vertical-align: middle;
             width:100%;
         }
-        @media screen and(max-width:800px){
-            -ms-flex=50%;
+        @media screen and (max-width: 800px){
+            -ms-flex:50%;
             flex:50%;
             max-width:50%;
         }
